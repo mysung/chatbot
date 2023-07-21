@@ -1,0 +1,26 @@
+// HTML
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Chatbot Example</h1>
+    <input id="inputField" type="text" placeholder="Type your message here">
+    <button onclick="getInputValue();">Submit</button>
+    <p id="chatLog"></p>
+  </body>
+</html>
+
+// JavaScript
+<script>
+function getInputValue(){
+    var inputVal = document.getElementById("inputField").value;
+    var chatLog = document.getElementById("chatLog");
+    chatLog.innerHTML += "<br>You: " + inputVal;
+    processInput(inputVal);
+}
+
+function processInput(inputVal){
+    var chatLog = document.getElementById("chatLog");
+    var response = "Chatbot: " + inputVal; // Replace this line with your own chat logic
+    chatLog.innerHTML += "<br>" + response;
+}
+</script>
