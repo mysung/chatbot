@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="favicon.ico" />
-    <title>MYS BOT</title>
+    <title>Philo Bot</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
@@ -17,24 +17,42 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
+<style>
+body {
+        background-image: url('star.jpg'); /* Set background image */
+        background-repeat: no-repeat; /* Prevent image from repeating */
+        background-size: cover; /* Make image cover the entire area */
+        padding-top: 30px; /* 빈 공간 추가 */
+}
+.container {
+    width: 50% !important; /* Container의 넓이를 50%로 설정 */
+    margin: 0 auto; /* 화면 중앙에 위치하도록 설정 */
+}
+</style>
+
 <body>
+    <div style="text-align:center;">
+        <h3 style="color:#f7cac9">Marvelous Marvelab</h3><br/>
+        <img src="marvel.png" alt="marvel" style="width:100%; max-width:100px;">
+    </div>
+
     <div class="container">
         <div class="card mt-5">
             <form onsubmit="return false;">
                 <div class="card-header" style="padding-top:12px;">
-                    <h4 style="color:#FF3300"><b>철학자와의 대화 챗봇</b></h4>
+                   
+                    <h4 style="color:#FF3300"><b>철학 대화 챗봇</b></h4>
 
                     <div class="form-floating">
 
                     </div>
-
 
                 </div>
                 <div class="card-body">
                     <div class="media" id="form">
                         <div class="bot-inbox inbox border rounded p-2 mb-2" style="color:#1263c2"><b>ChatBOT</b>
                             <div class="msg-header">
-                                <p class="mb-0">철학자 이름과 질문을 입력해주시면 철학자의 철학으로 질문에 대해 토론할 수 있습니다!</p>
+                                <p class="mb-0">철학자 이름과 질문을 입력하세요</p>
                             </div>
                         </div>
                     </div>
